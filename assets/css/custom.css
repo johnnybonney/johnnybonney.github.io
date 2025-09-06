@@ -1,0 +1,14 @@
+/* 1) Hide the top-right hamburger menu */
+.greedy-nav__toggle { display: none !important; }
+
+/* 2) Hide the sun/dark-mode toggle */
+#mode-toggle, .mode-toggle { display: none !important; }
+
+/* 3) Remove the footer/sitemap/RSS block */
+.page__footer { display: none !important; }
+
+/* 4) Show your name only in the sidebar: hide page title in main content */
+.page__title { display: none !important; }
+
+/* 5) Remove all links under the photo in the sidebar */
+.author__urls-wrapper { display: none !important; }
