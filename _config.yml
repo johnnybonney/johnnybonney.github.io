@@ -24,19 +24,19 @@ author:
   avatar    : "profile.jpg"             # put /images/profile.jpg in the repo
   name      : "John F. Bonney"          # this is the sidebar display name
   pronouns  :
-  bio       : "Ph.D. candidate, Stanford. Labor & applied micro."
-  location  : "Stanford University"
-  employer  : "Department of Economics"
+  bio       : "Economics Ph.D. candidate<br>Stanford University"
+  location  : 
+  employer  : 
   uri       :
-  email     : "john@johnbonney.com"
+  email     : 
 
-  googlescholar: "https://scholar.google.com/your-id"   # optional
+  googlescholar: 
   orcid        :
   pubmed       :
   researchgate :
-  github       : "johnnybonney"         # your GitHub username
+  github       : 
 
-  linkedin     : "john-bonney"          # optional
+  linkedin     : 
   twitter      :
   bluesky      :
 
