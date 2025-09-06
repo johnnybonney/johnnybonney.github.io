@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "John F. Bonney"
+title: ""
 permalink: /
 author_profile: true
 ---
