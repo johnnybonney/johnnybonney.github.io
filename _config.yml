@@ -8,7 +8,7 @@
 
 # --- Basic Site Settings ---
 locale    : "en-US"
-site_theme: "default"   # or "air" if you prefer
+site_theme: "air"   # or "air" if you prefer
 title     : "John F. Bonney"
 name      : &name "John F. Bonney"
 description: &description "Labor & applied microeconomics. Job market candidate."
