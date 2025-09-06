@@ -1,7 +1,8 @@
 ---
-layout: home
+layout: single
 title: "John F. Bonney"
 permalink: /
+author_profile: true
 ---
 
 I am a Ph.D. candidate in economics at Stanford University.
