@@ -1,29 +1,100 @@
-/* ---------- UNSQUISH SIDEBAR TEXT ---------- */
-@media (min-width: 980px){
-  /* Make the left column a bit wider */
-  #main{
-    grid-template-columns: 380px minmax(720px,1fr) !important; /* sidebar | content */
-  }
+/* ---------- HIDE UNWANTED UI ---------- */
+.greedy-nav__toggle { display: none !important; }
+#mode-toggle, .mode-toggle, #theme-toggle { display: none !important; }
+.page__footer { display: none !important; }
+.page__title { display: none !important; }
+.author__urls-wrapper, .author__urls { display: none !important; }
 
-  /* Allow sidebar blocks to use full width */
-  .sidebar,
-  .sidebar .author__content,
-  .sidebar .author__bio {
+/* ---------- SIDEBAR PHOTO ---------- */
+.author__avatar {
+  width: auto !important;
+  height: auto !important;
+  overflow: visible !important;
+  margin: 0 auto 12px auto !important;
+}
+.author__avatar img,
+img.author__avatar {
+  width: 260px !important;      /* adjust to taste */
+  max-width: none !important;
+  height: auto !important;
+  object-fit: contain !important;   /* no cropping */
+  object-position: center center !important;
+  border-radius: 0 !important;      /* 50% = circle, 0 = square */
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+/* ---------- SIDEBAR TEXT ---------- */
+.author__content, .author__bio {
+  text-align: center;
+  line-height: 1.45;
+  white-space: normal !important;
+  overflow: visible !important;
+}
+.author__name {
+  white-space: normal !important;
+  word-break: normal !important;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+.author__bio {
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+/* ---------- LAYOUT & CONTENT ---------- */
+.page__content {
+  max-width: 1100px !important;  /* widen reading column */
+  margin: 0;
+  text-align: left;
+  line-height: 1.7;
+  font-size: 1.02rem;
+}
+
+/* Two-column layout on desktop */
+@media (min-width: 980px) {
+  #main {
+    display: grid !important;
+    grid-template-columns: 380px minmax(720px, 1fr) !important; /* sidebar | content */
+    gap: 2.2rem !important;
+    align-items: start;
+  }
+  .sidebar.sticky {
+    position: static !important;   /* prevent clipping */
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  .page, .page__inner-wrap {
     max-width: none !important;
-    width: 100% !important;
   }
+}
 
-  /* Let long names wrap naturally and breathe */
-  .author__name {
-    white-space: normal !important;
-    word-break: normal !important;
-    font-size: 1.3rem;
-    line-height: 1.2;
-  }
+/* ---------- TYPOGRAPHY ---------- */
+.page__content h2 {
+  margin-top: 1.6rem;
+  padding-bottom: .25rem;
+  border-bottom: 1px solid #eee;
+}
 
-  /* Bio lines: readable and not cramped */
-  .author__bio {
-    font-size: 1rem;
-    line-height: 1.45;
-  }
+/* ---------- BUTTONS ---------- */
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #d0d7de;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 6px 10px 6px 0;
+}
+.btn:hover { background: #f6f8fa; }
+.btn-primary { border-color: #0b57d0; }
+.btn-primary:hover { background: #0b57d0; color: #fff; }
+
+/* ---------- INFO CARD BLOCK ---------- */
+.card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 14px;
+  background: #fcfcfc;
+  margin: 14px 0;
 }
