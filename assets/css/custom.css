@@ -1,53 +1,81 @@
-/* 1) Hide the top-right hamburger menu */
+/* ---------- HIDE UNWANTED UI ---------- */
+
+/* Hide the top-right hamburger menu */
 .greedy-nav__toggle { display: none !important; }
 
-/* 2) Hide the sun/dark-mode toggle */
-#mode-toggle, .mode-toggle { display: none !important; }
+/* Hide the sun/dark-mode toggle */
+#mode-toggle, .mode-toggle, #theme-toggle { display: none !important; }
 
-/* 3) Remove the footer/sitemap/RSS block */
+/* Hide the footer (sitemap, GitHub link, RSS) */
 .page__footer { display: none !important; }
 
-/* 4) Show your name only in the sidebar: hide page title in main content */
+/* Hide the page title in the content area (keep name only in sidebar) */
 .page__title { display: none !important; }
 
-/* 5) Remove all links under the photo in the sidebar */
-.author__urls-wrapper { display: none !important; }
+/* Hide links under the photo in the sidebar */
+.author__urls-wrapper, .author__urls { display: none !important; }
 
-/* 6) Make sidebar profile image bigger, square, and centered */
-.author__avatar img {
-  width: 200px !important;   /* increase/decrease as you like */
-  height: 200px !important;  /* force square */
-  border-radius: 0 !important; /* 0 = square; 50% = circle */
-  object-fit: cover;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; /* centers image */
+/* ---------- SIDEBAR PHOTO & TEXT ---------- */
+
+/* Sidebar headshot: square container + centered crop */
+.author__avatar {
+  width: 240px;              /* adjust to taste */
+  height: 240px;
+  overflow: hidden;
+  margin: 0 auto 12px auto;  /* center in sidebar */
 }
 
-/* 7) Center the sidebar text under the photo */
-.author__content {
+/* Cover both selectors used by theme */
+.author__avatar img,
+img.author__avatar {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  border-radius: 0 !important;   /* 0 = square; 50% = circle */
+  display: block !important;
+}
+
+/* Center text under the photo */
+.author__content, .author__bio {
   text-align: center;
 }
 
-/* If you only want the bio centered (not the name) */
-.author__bio {
-  text-align: center;
+/* ---------- LAYOUT & CONTENT ---------- */
+
+/* Wider reading column */
+.page__content {
+  max-width: 960px !important;   /* was 820; adjust to taste */
+  margin: 0;
+  text-align: left;
+  line-height: 1.7;
+  font-size: 1.02rem;
 }
 
-/* Layout tweaks */
-.page__content { max-width: 820px; }
+/* Two-column layout for desktop */
+@media (min-width: 1024px) {
+  #main {
+    display: grid !important;
+    grid-template-columns: 300px 1fr !important; /* sidebar | content */
+    gap: 2rem !important;
+    align-items: start;
+  }
+  .sidebar.sticky {
+    position: sticky;
+    top: 2rem;
+  }
+  .page, .page__inner-wrap {
+    max-width: none !important;
+  }
+}
+
+/* ---------- TYPOGRAPHY & EXTRAS ---------- */
 
 /* Section headings */
 .page__content h2 {
   margin-top: 1.6rem;
   padding-bottom: .25rem;
   border-bottom: 1px solid #eee;
-}
-
-/* Nicer body text */
-.page__content p, .page__content li {
-  line-height: 1.7;
-  font-size: 1.02rem;
 }
 
 /* Buttons */
@@ -61,64 +89,14 @@
   margin: 6px 10px 6px 0;
 }
 .btn:hover { background: #f6f8fa; }
-.btn-primary {
-  border-color: #0b57d0;
-}
-.btn-primary:hover {
-  background: #0b57d0; color: #fff;
-}
+.btn-primary { border-color: #0b57d0; }
+.btn-primary:hover { background: #0b57d0; color: #fff; }
 
-/* Subtle block for contact/info */
+/* Subtle info card block */
 .card {
   border: 1px solid #eee;
   border-radius: 10px;
   padding: 14px;
   background: #fcfcfc;
   margin: 14px 0;
-}
-
-/* Keep sidebar tidy with larger square photo (already added earlier) */
-.author__avatar img {
-  width: 200px !important;
-  height: 200px !important;
-  border-radius: 0 !important;
-  object-fit: cover;
-  display: block;
-  margin-left: auto; margin-right: auto;
-}
-
-/* Center sidebar text under photo */
-.author__content, .author__bio { text-align: center; }
-
-/* Force sidebar + content side-by-side on wider screens */
-@media (min-width: 1024px) {
-  #main {
-    display: grid !important;
-    grid-template-columns: 300px 1fr !important; /* sidebar, content */
-    gap: 2rem !important;
-    align-items: start;
-  }
-  .sidebar.sticky {
-    position: sticky;
-    top: 2rem;
-  }
-  /* Make sure main content isn't centered */
-  .page__content { text-align: left; margin: 0; }
-}
-
-/* Sidebar headshot: fixed square container + centered crop */
-.author__avatar {
-  width: 220px;              /* pick your size */
-  height: 220px;
-  overflow: hidden;          /* crop anything outside the square */
-  margin: 0 auto 10px auto;  /* center in sidebar */
-}
-
-.author__avatar img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover;         /* fill the square without distortion */
-  object-position: center center !important; /* center the crop */
-  border-radius: 0 !important;               /* square; use 50% for circle */
-  display: block;
 }
