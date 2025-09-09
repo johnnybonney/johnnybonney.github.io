@@ -89,3 +89,19 @@
 
 /* Center sidebar text under photo */
 .author__content, .author__bio { text-align: center; }
+
+/* Force sidebar + content side-by-side on wider screens */
+@media (min-width: 1024px) {
+  #main {
+    display: grid !important;
+    grid-template-columns: 300px 1fr !important; /* sidebar, content */
+    gap: 2rem !important;
+    align-items: start;
+  }
+  .sidebar.sticky {
+    position: sticky;
+    top: 2rem;
+  }
+  /* Make sure main content isn't centered */
+  .page__content { text-align: left; margin: 0; }
+}
