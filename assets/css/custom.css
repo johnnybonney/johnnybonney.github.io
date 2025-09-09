@@ -12,3 +12,14 @@
 
 /* 5) Remove all links under the photo in the sidebar */
 .author__urls-wrapper { display: none !important; }
+
+/* 6) Make sidebar profile image bigger, square, and centered */
+.author__avatar img {
+  width: 200px !important;   /* increase/decrease as you like */
+  height: 200px !important;  /* force square */
+  border-radius: 0 !important; /* 0 = square; 50% = circle */
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* centers image */
+}
