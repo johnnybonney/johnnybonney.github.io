@@ -23,3 +23,13 @@
   margin-left: auto;
   margin-right: auto; /* centers image */
 }
+
+/* 7) Center the sidebar text under the photo */
+.author__content {
+  text-align: center;
+}
+
+/* If you only want the bio centered (not the name) */
+.author__bio {
+  text-align: center;
+}
