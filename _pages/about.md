@@ -25,7 +25,7 @@ You can download my CV [**here**](/files/Bonney_CV_2025-09-05.pdf), and you can 
 **"When is TSLS *Actually* LATE?"**
 *with [Christine Blandhol](https://sites.google.com/view/cblandhol), [Magne Mogstad](https://sites.google.com/site/magnemogstad/), and [Alexander Torgovitsky](https://a-torgovitsky.github.io)*  
 R&R (2nd round) at the Review of Economic Studies  
-[NBER working paper 29709](https://www.nber.org/papers/w29709)
+[PDF](/files/tslslate.pdf) | [NBER working paper 29709](https://www.nber.org/papers/w29709)
 <details>
   <summary><em>Abstract</em></summary>
   Linear instrumental variable estimators, such as two-stage least squares (TSLS), are commonly interpreted as estimating non-negatively weighted averages of causal effects, referred to as local average treatment effects (LATEs). We examine whether the LATE interpretation actually applies to the types of TSLS specifications that are used in practice. We show that if the specification includes covariates—which most empirical work does—then the LATE interpretation does not apply in general. Instead, the TSLS estimator will, in general, reflect treatment effects for both compliers and always/never-takers, and some treatment effects for the always/never-takers will necessarily be negatively weighted. We show that the only specifications that have a LATE interpretation are “saturated” specifications that control for covariates nonparametrically, implying that such specifications are both sufficient and necessary for TSLS to have a LATE interpretation, at least without additional parametric assumptions. This result is concerning because, as we document, empirical researchers almost never control for covariates nonparametrically, and rarely discuss or justify parametric specifications of covariates. We apply our results to thirteen empirical studies and find strong evidence that the LATE interpretation of TSLS is far from accurate for the types of specifications actually used in practice. We offer concrete recommendations for practice motivated by our theoretical and empirical results.
@@ -34,7 +34,7 @@ R&R (2nd round) at the Review of Economic Studies
 **"Childbirth and Firm Performance: Evidence from Norwegian Entrepreneurs"**
 *with [Luigi Pistaferri](https://sites.google.com/view/pistaferri/home) and [Alessandra Voena](https://avoena.people.stanford.edu)*  
 R&R at the Journal of Labor Economics  
-[NBER working paper 33448](https://www.nber.org/papers/w33448)
+[PDF](/files/childbirth-firms.pdf) | [NBER working paper 33448](https://www.nber.org/papers/w33448)
 <details>
   <summary><em>Abstract</em></summary>
 Using multiple administrative data sources from Norway, we examine how firm performance changes after entrepreneurs become parents. Female-owned businesses experience a substantial decline in profits, steadily decreasing to 30% below baseline ten years post-childbirth. In contrast, male-owned businesses show no decline, often growing in revenues and costs after childbirth. The profit decline for female-owned firms is most pronounced among highly capable entrepreneurs, women who are majority owners, and those with working spouses. Entrepreneurial effort is key to performance, and our findings suggest that time demands from childbirth and childcare are a significant determinant of the decline in firm profits.
