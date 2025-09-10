@@ -34,9 +34,14 @@ img.author__avatar {
 
 /* Reduce spacing before/after abstract dropdowns */
 details {
-  margin-top: 0.25rem !important;   /* shrink the gap above */
-  margin-bottom: 1rem;              /* keep a bit of space below */
+  margin-top: 0 !important;       /* remove gap above */
+  margin-bottom: 1rem;            /* keep space after */
 }
+
+p + details {
+  margin-top: 0.25rem !important; /* small, consistent gap after paragraph */
+}
+
 details summary {
   padding-top: 0.2rem;              /* tighten the click area */
   padding-bottom: 0.2rem;
