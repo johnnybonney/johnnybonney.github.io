@@ -1,55 +1,58 @@
-
-
-/* Force headshot to be large, square, and centered */
-.author__avatar {
-  width: 280px !important;   /* adjust size */
+/* ========== SIDEBAR PHOTO (square, centered, larger) ========== */
+.author__avatar{
+  width: 280px !important;
   height: 280px !important;
   margin: 0 auto 12px auto !important;
   display: block !important;
-  border-radius: 0 !important;   /* square corners */
   overflow: hidden !important;
+  border-radius: 0 !important;      /* square */
   text-align: center;
 }
-
 .author__avatar img,
-img.author__avatar {
+img.author__avatar{
   width: 100% !important;
   height: 100% !important;
-  object-fit: cover !important;
+  object-fit: cover !important;      /* clean square crop */
   object-position: center !important;
-  border-radius: 0 !important;   /* no oval */
+  border-radius: 0 !important;
   display: block !important;
   margin: 0 auto !important;
 }
 
-.greedy-nav__toggle { display: none !important; }
+/* ========== MASTHEAD TITLE (bigger, keep hamburger hidden) ========== */
+.masthead .greedy-nav > button,
+.greedy-nav__toggle,
+.greedy-nav .hidden-links { display: none !important; }
 
-/* Enlarge the masthead title text (top-left) */
-.masthead__menu-item.masthead__menu-item--lg a {
-  font-size: 2rem !important;    /* default ~1rem; bump it up */
+.masthead__menu-item.masthead__menu-item--lg a{
+  font-size: 2rem !important;
   font-weight: 700 !important;
   letter-spacing: 0.5px;
   text-transform: none;
 }
 
-/* Reduce spacing before/after abstract dropdowns */
-details {
-  margin-top: 0 !important;       /* remove gap above */
-  margin-bottom: 1rem;            /* keep space after */
+/* ========== ABSTRACT DROPDOWNS (tight gap above, comfy below) ========== */
+.page__content details{
+  margin-top: 0 !important;     /* remove gap above details */
+  margin-bottom: 1rem;          /* keep space after */
+}
+.page__content p + details{
+  margin-top: 0.25rem !important;   /* small, consistent gap after the R&R line */
+}
+/* If your browser supports :has(), also trim the paragraph's bottom margin */
+@supports selector(:has(*)){
+  .page__content p:has(+ details){ margin-bottom: 0.25rem !important; }
+}
+.page__content details summary{
+  padding: 0.2rem 0;            /* tighter click area */
+  cursor: pointer;
+  font-weight: 600;
 }
 
-p + details {
-  margin-top: 0.25rem !important; /* small, consistent gap after paragraph */
-}
-
-details summary {
-  padding-top: 0.2rem;              /* tighten the click area */
-  padding-bottom: 0.2rem;
-}
-
-/* Hide Sitemap and Feed footer items */
+/* ========== REMOVE FOOTER + "FOLLOW" UNDER PHOTO ========== */
+.author__urls-wrapper,
 .page__footer,
 .page__footer-follow,
-.page__footer-copyright {
+.page__footer-copyright{
   display: none !important;
 }
