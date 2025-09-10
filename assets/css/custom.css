@@ -31,3 +31,20 @@ img.author__avatar {
   letter-spacing: 0.5px;
   text-transform: none;
 }
+
+/* Reduce spacing before/after abstract dropdowns */
+details {
+  margin-top: 0.25rem !important;   /* shrink the gap above */
+  margin-bottom: 1rem;              /* keep a bit of space below */
+}
+details summary {
+  padding-top: 0.2rem;              /* tighten the click area */
+  padding-bottom: 0.2rem;
+}
+
+/* Hide Sitemap and Feed footer items */
+.page__footer,
+.page__footer-follow,
+.page__footer-copyright {
+  display: none !important;
+}
