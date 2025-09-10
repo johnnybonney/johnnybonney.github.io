@@ -11,7 +11,7 @@ Motivated by the challenges that arise in my applied work, I also study how to p
 
 My dissertation research has been supported by the [National Science Foundation](https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program) and the [Stanford Institute for Economic Policy Research](https://siepr.stanford.edu).
 
-You can download my CV [**here**](/files/Bonney_CV_2025-09-05.pdf), and you can reach me at [jbonney@stanford.edu](mailto:jbonney@stanford.edu).
+You can download my CV [**here**](/files/Bonney_CV_2025-09-05.pdf), and you can reach me at jbonney [at] stanford [dot] edu.
 
 ## Job market paper
 
