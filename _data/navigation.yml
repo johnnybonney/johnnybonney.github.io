@@ -7,4 +7,6 @@
 # NOTE that only one of the CV options should be selected, the first is for the
 #      Markdown formatted page while the second is generated using JSON.
 
-main: []
+main:
+  - title: "CV"
+    url: /files/Bonney_CV_2025-09-05.pdf
