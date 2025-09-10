@@ -22,9 +22,9 @@ repository: "johnnybonney/johnnybonney.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   avatar    : "profile.jpg"             # put /images/profile.jpg in the repo
-  name      : "John F. Bonney"          # this is the sidebar display name
+  name      : ""          # this is the sidebar display name
   pronouns  :
-  bio       : "Economics Ph.D. candidate<br>Stanford University"
+  bio       : ""
   location  : 
   employer  : 
   uri       :
