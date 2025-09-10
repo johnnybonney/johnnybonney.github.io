@@ -21,3 +21,13 @@ img.author__avatar {
   display: block !important;
   margin: 0 auto !important;
 }
+
+.greedy-nav__toggle { display: none !important; }
+
+/* Enlarge the masthead title text (top-left) */
+.masthead__menu-item.masthead__menu-item--lg a {
+  font-size: 2rem !important;    /* default ~1rem; bump it up */
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
+  text-transform: none;
+}
