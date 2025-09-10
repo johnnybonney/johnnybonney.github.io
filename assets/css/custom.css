@@ -98,3 +98,17 @@ img.author__avatar {
   background: #fcfcfc;
   margin: 14px 0;
 }
+
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+details[open] summary {
+  margin-bottom: 0.5rem;
+}
+
+details {
+  margin-bottom: 1rem;
+}
