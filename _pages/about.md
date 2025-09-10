@@ -42,7 +42,7 @@ Many entrepreneurs rely on their personal networks to hire their first employees
 ## Working papers
 
 **When is TSLS *Actually* LATE?** ([NBER](https://www.nber.org/papers/w29709))  
-*with Christine Blandhol, Magne Mogstad, and Alexander Torgovitsky*  
+*with [Christine Blandhol](https://sites.google.com/view/cblandhol), [Magne Mogstad](https://sites.google.com/site/magnemogstad/), and [Alexander Torgovitsky](https://a-torgovitsky.github.io)*  
 R&R (2nd round) at the Review of Economic Studies
 
 <details>
@@ -51,7 +51,7 @@ R&R (2nd round) at the Review of Economic Studies
 </details>
 
 **Childbirth and Firm Performance: Evidence from Norwegian Entrepreneurs** ([NBER](https://www.nber.org/papers/w33448))  
-*with Luigi Pistaferri and Alessandra Voena*  
+*with [Luigi Pistaferri](https://sites.google.com/view/pistaferri/home) and [Alessandra Voena](https://avoena.people.stanford.edu)*  
 R&R at the Journal of Labor Economics
 
 <details>
@@ -62,7 +62,7 @@ Using multiple administrative data sources from Norway, we examine how firm perf
 ## Works in progress
 
 **Industry-Academia Ties & the Direction of Innovation: Evidence from Stanford Research Park**  
-*with Mihai Codreanu*
+*with [Mihai Codreanu](https://mihaicodreanu.github.io)*
 
 <details>
   <summary><em>Abstract</em></summary>
@@ -70,7 +70,7 @@ We analyze the effects of strengthening industry-academia ties on the amount and
 </details>
 
 **How Local are Local Average Treatment Effects?**  
-*with Christine Blandhol, Magne Mogstad, Joshua Shea, and Alexander Torgovitsky*
+*with [Christine Blandhol](https://sites.google.com/view/cblandhol), [Magne Mogstad](https://sites.google.com/site/magnemogstad/), [Joshua Shea](https://jkcshea.github.io), and [Alexander Torgovitsky](https://a-torgovitsky.github.io)*
 
 <details>
   <summary><em>Abstract</em></summary>
@@ -80,6 +80,6 @@ Empirical researchers often use instrumental variables (IVs) to estimate a local
 **Relatives in the Workplace: The Formation and Growth of Family Firms**
 
 **Intergenerational Transfers, Entrepreneurial Entry, and Firm Performance**  
-*with Luigi Pistaferri and Alessandra Voena*
+*with [Luigi Pistaferri](https://sites.google.com/view/pistaferri/home) and [Alessandra Voena](https://avoena.people.stanford.edu)*
 
 
