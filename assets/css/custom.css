@@ -21,15 +21,3 @@ img.author__avatar {
   display: block !important;
   margin: 0 auto !important;
 }
-
-/* 1) Bigger masthead site title */
-.masthead__menu-item.masthead__menu-item--lg a {
-  font-size: 1.6rem !important;
-  font-weight: 700 !important;
-}
-
-/* 2) Hide name + bio under photo */
-.author__name,
-.author__bio {
-  display: none !important;
-}
