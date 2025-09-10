@@ -5,25 +5,6 @@ permalink: /
 author_profile: true
 ---
 
-<style>
-/* Hide the entire top masthead (kills hamburger + any nav) */
-.masthead,
-.greedy-nav__toggle,
-.greedy-nav { display: none !important; }
-
-/* Hide any dark-mode / sun icon toggles */
-#mode-toggle, .mode-toggle, #theme-toggle { display: none !important; }
-
-/* Hide the footer (sitemap, GitHub link, RSS) */
-.page__footer { display: none !important; }
-
-/* Hide the page title in the content area (keep name only in sidebar) */
-.page__title { display: none !important; }
-
-/* Hide links under the photo in the sidebar */
-.author__urls-wrapper, .author__urls { display: none !important; }
-</style>
-
 I am a Ph.D. candidate in economics at Stanford University.
 My primary research studies how the human capital of workers and entrepreneurs shapes firm entry and performance.
 Motivated by the challenges that arise in my applied work, I also study how to properly leverage instrumental variables when treatment effects vary across individuals.
