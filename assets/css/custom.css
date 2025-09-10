@@ -2,8 +2,8 @@
 
 /* Force headshot to be large, square, and centered */
 .author__avatar {
-  width: 240px !important;   /* adjust size */
-  height: 240px !important;
+  width: 280px !important;   /* adjust size */
+  height: 280px !important;
   margin: 0 auto 12px auto !important;
   display: block !important;
   border-radius: 0 !important;   /* square corners */
@@ -20,4 +20,16 @@ img.author__avatar {
   border-radius: 0 !important;   /* no oval */
   display: block !important;
   margin: 0 auto !important;
+}
+
+/* 1) Bigger masthead site title */
+.masthead__menu-item.masthead__menu-item--lg a {
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+}
+
+/* 2) Hide name + bio under photo */
+.author__name,
+.author__bio {
+  display: none !important;
 }
