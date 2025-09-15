@@ -179,18 +179,10 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
+  teaching:     { output: false }
+  publications: { output: false }
+  portfolio:    { output: false }
+  talks:        { output: false }
 
 
 # These settings control how pages and collections are included in the site
@@ -265,10 +257,10 @@ timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins
 plugins:
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-sitemap
+  # - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
 
