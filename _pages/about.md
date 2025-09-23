@@ -12,7 +12,7 @@ My dissertation research has been supported by the [National Science Foundation]
 
 I am on the academic job market in 2025-2026.
 
-You can download my CV [**here**](/files/Bonney_CV_2025-09-05.pdf), and you can reach me at [jbonney@stanford.edu](mailto:jbonney@stanford.edu).
+You can download my CV [**here**](/files/Bonney_CV.pdf), and you can reach me at [jbonney@stanford.edu](mailto:jbonney@stanford.edu).
 
 **Committee:**  
 Luigi Pistafferri (co-primary): [pista@stanford.edu](mailto: pista@stanford.edu)  
