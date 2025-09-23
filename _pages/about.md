@@ -6,8 +6,7 @@ author_profile: true
 ---
 
 I am a Ph.D. candidate in economics at Stanford University, specializing in labor economics and applied econometrics.
-My research examines how the human capital of workers and entrepreneurs shapes firm entry and performance.
-Motivated by the challenges that arise in my applied work, I also study how to properly leverage instrumental variables when treatment effects vary across individuals.
+I study how the human capital of workers and entrepreneurs shapes firm entry and performance, and I develop methods for leveraging instrumental variables when treatment effects vary across individuals.
 
 My dissertation research has been supported by the [National Science Foundation](https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program) and the [Stanford Institute for Economic Policy Research](https://siepr.stanford.edu).
 
@@ -15,7 +14,7 @@ I am on the academic job market in 2025-2026.
 
 You can download my CV [**here**](/files/Bonney_CV_2025-09-05.pdf), and you can reach me at [jbonney@stanford.edu](mailto:jbonney@stanford.edu).
 
-**Committee:**
+**Committee:**  
 Luigi Pistafferri (co-primary): [pista@stanford.edu](mailto: pista@stanford.edu)  
 Alessandra Voena (co-primary): [avoena@stanford.edu](mailto: avoena@stanford.edu)  
 Isaac Sorkin: [sorkin@stanford.edu](mailto: sorkin@stanford.edu)
