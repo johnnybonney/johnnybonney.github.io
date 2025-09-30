@@ -58,3 +58,10 @@ img.author__avatar {
 .page__footer-copyright{
   display: none !important;
 }
+
+/* Larger headshot on desktop only */
+@media (min-width: 992px) {
+  .author__avatar {
+    max-width: 360px !important;  /* increase from 320px */
+  }
+}
