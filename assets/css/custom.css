@@ -1,18 +1,20 @@
-/* ========== SIDEBAR PHOTO (square, centered, larger) ========== */
-.author__avatar{
-  width: 280px !important;
-  height: 280px !important;
+/* ========== SIDEBAR PHOTO (square, centered, responsive) ========== */
+.author__avatar {
+  width: 100% !important;        /* take full width of sidebar */
+  max-width: 320px !important;   /* never get bigger than this */
+  aspect-ratio: 1 / 1;           /* keep square automatically */
   margin: 0 auto 12px auto !important;
   display: block !important;
   overflow: hidden !important;
-  border-radius: 0 !important;      /* square */
+  border-radius: 0 !important;   /* square; use 50% for circle */
   text-align: center;
 }
+
 .author__avatar img,
-img.author__avatar{
+img.author__avatar {
   width: 100% !important;
   height: 100% !important;
-  object-fit: cover !important;      /* clean square crop */
+  object-fit: cover !important;      /* fills square without distortion */
   object-position: center !important;
   border-radius: 0 !important;
   display: block !important;
