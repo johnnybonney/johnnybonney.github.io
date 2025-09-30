@@ -33,6 +33,10 @@ img.author__avatar {
   text-transform: none;
 }
 
+#theme-toggle {
+  display: none !important;
+}
+
 /* ========== ABSTRACT DROPDOWNS (tight gap above, comfy below) ========== */
 .page__content details{
   margin-top: 0 !important;     /* remove gap above details */
