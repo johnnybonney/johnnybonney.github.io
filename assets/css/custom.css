@@ -1,20 +1,19 @@
 /* ========== SIDEBAR PHOTO (square, centered, responsive) ========== */
 .author__avatar {
-  width: 100% !important;        /* take full width of sidebar */
-  max-width: 320px !important;   /* never get bigger than this */
-  aspect-ratio: 1 / 1;           /* keep square automatically */
+  width: 100% !important;        /* fill sidebar width */
+  max-width: 320px !important;   /* mobile/tablet cap */
+  aspect-ratio: 1 / 1;           /* keep square */
   margin: 0 auto 12px auto !important;
   display: block !important;
   overflow: hidden !important;
-  border-radius: 0 !important;   /* square; use 50% for circle */
+  border-radius: 0 !important;   /* 50% = circle */
   text-align: center;
 }
-
 .author__avatar img,
 img.author__avatar {
   width: 100% !important;
   height: 100% !important;
-  object-fit: cover !important;      /* fills square without distortion */
+  object-fit: cover !important;
   object-position: center !important;
   border-radius: 0 !important;
   display: block !important;
@@ -26,31 +25,24 @@ img.author__avatar {
 .greedy-nav__toggle,
 .greedy-nav .hidden-links { display: none !important; }
 
-.masthead__menu-item.masthead__menu-item--lg a{
+.masthead__menu-item.masthead__menu-item--lg a {
   font-size: 2rem !important;
   font-weight: 700 !important;
   letter-spacing: 0.5px;
   text-transform: none;
+  white-space: nowrap; /* keep name on one line on narrow screens */
 }
 
-#theme-toggle {
-  display: none !important;
-}
+#theme-toggle { display: none !important; }
 
 /* ========== ABSTRACT DROPDOWNS (tight gap above, comfy below) ========== */
-.page__content details{
-  margin-top: 0 !important;     /* remove gap above details */
-  margin-bottom: 1rem;          /* keep space after */
+.page__content details { margin-top: 0 !important; margin-bottom: 1rem; }
+.page__content p + details { margin-top: 0.25rem !important; }
+@supports selector(:has(*)) {
+  .page__content p:has(+ details) { margin-bottom: 0.25rem !important; }
 }
-.page__content p + details{
-  margin-top: 0.25rem !important;   /* small, consistent gap after the R&R line */
-}
-/* If your browser supports :has(), also trim the paragraph's bottom margin */
-@supports selector(:has(*)){
-  .page__content p:has(+ details){ margin-bottom: 0.25rem !important; }
-}
-.page__content details summary{
-  padding: 0.2rem 0;            /* tighter click area */
+.page__content details summary {
+  padding: 0.2rem 0;
   cursor: pointer;
   font-weight: 600;
 }
@@ -59,13 +51,17 @@ img.author__avatar {
 .author__urls-wrapper,
 .page__footer,
 .page__footer-follow,
-.page__footer-copyright{
+.page__footer-copyright {
   display: none !important;
 }
 
-/* Larger headshot on desktop only */
+/* ========== DESKTOP TWEAKS: wider sidebar + larger photo ========== */
 @media (min-width: 992px) {
+  .sidebar {
+    flex: 0 0 380px !important;   /* sidebar width */
+    max-width: 380px !important;
+  }
   .author__avatar {
-    max-width: 360px !important;  /* increase from 320px */
+    max-width: 360px !important;  /* photo cap on desktop */
   }
 }
