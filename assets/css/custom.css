@@ -65,3 +65,31 @@ img.author__avatar {
     max-width: 360px !important;  /* photo cap on desktop */
   }
 }
+
+/* Desktop: widen sidebar and uncap the avatar so it can grow */
+@media (min-width: 1024px) {
+  /* Give the sidebar a bit more room */
+  .layout--single .sidebar.sticky {
+    flex: 0 0 420px !important;
+    max-width: 420px !important;
+  }
+
+  /* Let the avatar fill that space (square, centered) */
+  .layout--single .sidebar .author__avatar {
+    width: 100% !important;
+    max-width: 380px !important;   /* tweak to taste: 360–400px */
+    aspect-ratio: 1 / 1;           /* keep square */
+    margin: 0 auto 12px auto !important;
+    overflow: hidden !important;
+  }
+
+  /* Kill any theme-imposed max-width on the img itself */
+  .layout--single .sidebar .author__avatar img {
+    max-width: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+  }
+}
