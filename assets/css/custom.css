@@ -1,12 +1,37 @@
-/* ========== SIDEBAR PHOTO (square, centered, responsive) ========== */
+/* ===================== GENERAL CLEANUP ===================== */
+/* Hide hamburger + hidden menu */
+.masthead .greedy-nav > button,
+.greedy-nav__toggle,
+.greedy-nav .hidden-links { display: none !important; }
+
+/* Hide dark-mode toggle */
+#theme-toggle { display: none !important; }
+
+/* Hide “Follow” under photo + full footer block */
+.author__urls-wrapper,
+.page__footer,
+.page__footer-follow,
+.page__footer-copyright { display: none !important; }
+
+/* Keep site title on one line; size it nicely */
+.masthead__menu-item.masthead__menu-item--lg a {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  white-space: nowrap !important;
+}
+
+/* ===================== SIDEBAR PHOTO ===================== */
+/* Responsive, square headshot; centered */
 .author__avatar {
-  width: 100% !important;        /* fill sidebar width */
-  max-width: 320px !important;   /* mobile/tablet cap */
-  aspect-ratio: 1 / 1;           /* keep square */
+  width: 100% !important;          /* fill sidebar width */
+  max-width: 320px !important;     /* cap on mobile/tablet */
+  aspect-ratio: 1 / 1;             /* keep square */
   margin: 0 auto 12px auto !important;
   display: block !important;
   overflow: hidden !important;
-  border-radius: 0 !important;   /* 50% = circle */
+  border-radius: 0 !important;     /* 50% = circle if you ever want it */
   text-align: center;
 }
 .author__avatar img,
@@ -20,22 +45,7 @@ img.author__avatar {
   margin: 0 auto !important;
 }
 
-/* ========== MASTHEAD TITLE (bigger, keep hamburger hidden) ========== */
-.masthead .greedy-nav > button,
-.greedy-nav__toggle,
-.greedy-nav .hidden-links { display: none !important; }
-
-.masthead__menu-item.masthead__menu-item--lg a {
-  font-size: 2rem !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.5px;
-  text-transform: none;
-  white-space: nowrap; /* keep name on one line on narrow screens */
-}
-
-#theme-toggle { display: none !important; }
-
-/* ========== ABSTRACT DROPDOWNS (tight gap above, comfy below) ========== */
+/* ===================== ABSTRACT DROPDOWNS ===================== */
 .page__content details { margin-top: 0 !important; margin-bottom: 1rem; }
 .page__content p + details { margin-top: 0.25rem !important; }
 @supports selector(:has(*)) {
@@ -47,45 +57,36 @@ img.author__avatar {
   font-weight: 600;
 }
 
-/* ========== REMOVE FOOTER + "FOLLOW" UNDER PHOTO ========== */
-.author__urls-wrapper,
-.page__footer,
-.page__footer-follow,
-.page__footer-copyright {
-  display: none !important;
-}
-
-/* ========== DESKTOP TWEAKS: wider sidebar + larger photo ========== */
-@media (min-width: 992px) {
-  .sidebar {
-    flex: 0 0 380px !important;   /* sidebar width */
-    max-width: 380px !important;
-  }
-  .author__avatar {
-    max-width: 360px !important;  /* photo cap on desktop */
-  }
-}
-
-/* Desktop: widen sidebar and uncap the avatar so it can grow */
+/* ===================== DESKTOP LAYOUT & BIGGER PHOTO ===================== */
+/* Force a wider sidebar on desktop so the headshot can grow */
 @media (min-width: 1024px) {
-  /* Give the sidebar a bit more room */
-  .layout--single .sidebar.sticky {
-    flex: 0 0 420px !important;
-    max-width: 420px !important;
+  /* Two-column layout with explicit sidebar width */
+  #main {
+    display: grid !important;
+    grid-template-columns: 420px minmax(0, 1fr) !important; /* sidebar | content */
+    gap: 2rem !important;
+    align-items: start;
   }
 
-  /* Let the avatar fill that space (square, centered) */
-  .layout--single .sidebar .author__avatar {
+  /* Ensure the actual sidebar matches the grid column width */
+  .sidebar,
+  .sidebar.sticky {
+    width: 420px !important;
+    max-width: 420px !important;
+    flex: 0 0 420px !important;   /* covers flex fallbacks */
+  }
+
+  /* Let the avatar expand inside the wider sidebar */
+  .sidebar .author__avatar {
     width: 100% !important;
-    max-width: 380px !important;   /* tweak to taste: 360–400px */
-    aspect-ratio: 1 / 1;           /* keep square */
+    max-width: 380px !important;  /* adjust: 360–400px as you like */
+    aspect-ratio: 1 / 1;
     margin: 0 auto 12px auto !important;
     overflow: hidden !important;
   }
 
-  /* Kill any theme-imposed max-width on the img itself */
-  .layout--single .sidebar .author__avatar img {
-    max-width: none !important;
+  .sidebar .author__avatar img {
+    max-width: none !important;   /* override any theme cap */
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
