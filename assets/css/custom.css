@@ -46,10 +46,10 @@ img.author__avatar {
 }
 
 .photo-credit {
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   color: #777;
   text-align: center;
-  margin-top: 6px;
+  margin-top: 2px;
 }
 
 /* ===================== ABSTRACT DROPDOWNS ===================== */
