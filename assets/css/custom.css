@@ -45,6 +45,16 @@ img.author__avatar {
   margin: 0 auto !important;
 }
 
+/* Add credit text under sidebar headshot */
+.author__avatar::after {
+  content: "Photo by Vanessa Coleman";
+  display: block;
+  font-size: 0.8rem;
+  color: #777;
+  text-align: center;
+  margin-top: 6px;
+}
+
 /* ===================== ABSTRACT DROPDOWNS ===================== */
 .page__content details { margin-top: 0 !important; margin-bottom: 1rem; }
 .page__content p + details { margin-top: 0.25rem !important; }
