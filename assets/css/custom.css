@@ -58,39 +58,13 @@ img.author__avatar {
 }
 
 /* ===================== DESKTOP LAYOUT & BIGGER PHOTO ===================== */
-/* Force a wider sidebar on desktop so the headshot can grow */
+/* Desktop-only: keep theme layout; just allow a bigger avatar cap */
 @media (min-width: 1024px) {
-  /* Two-column layout with explicit sidebar width */
-  #main {
-    display: grid !important;
-    grid-template-columns: 420px minmax(0, 1fr) !important; /* sidebar | content */
-    gap: 2rem !important;
-    align-items: start;
+  .layout--single .sidebar {
+    flex: 0 0 360px !important;   /* widen sidebar slightly (theme-safe) */
+    max-width: 360px !important;
   }
-
-  /* Ensure the actual sidebar matches the grid column width */
-  .sidebar,
-  .sidebar.sticky {
-    width: 420px !important;
-    max-width: 420px !important;
-    flex: 0 0 420px !important;   /* covers flex fallbacks */
-  }
-
-  /* Let the avatar expand inside the wider sidebar */
-  .sidebar .author__avatar {
-    width: 100% !important;
-    max-width: 380px !important;  /* adjust: 360–400px as you like */
-    aspect-ratio: 1 / 1;
-    margin: 0 auto 12px auto !important;
-    overflow: hidden !important;
-  }
-
-  .sidebar .author__avatar img {
-    max-width: none !important;   /* override any theme cap */
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    object-position: center !important;
-    display: block !important;
+  .layout--single .sidebar .author__avatar {
+    max-width: 340px !important;  /* headshot grows within the wider sidebar */
   }
 }
