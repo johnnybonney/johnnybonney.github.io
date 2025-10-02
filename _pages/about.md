@@ -5,8 +5,7 @@ permalink: /
 author_profile: true
 ---
 
-I am a Ph.D. candidate in economics at Stanford University, specializing in labor economics and applied econometrics.
-I study how the human capital of workers and entrepreneurs shapes firm entry and performance, and I develop methods for leveraging instrumental variables when treatment effects vary across individuals.
+I am a Ph.D. candidate in economics at Stanford University, specializing in labor economics, entrepreneurial finance, and applied econometrics. My research examines how entrepreneurs' access to human and financial capital shapes firm entry and growth, and I develop methods for leveraging instrumental variables when treatment effects vary across individuals.
 
 My dissertation research has been supported by the [National Science Foundation](https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program) and the [Stanford Institute for Economic Policy Research](https://siepr.stanford.edu).
 
@@ -64,7 +63,7 @@ Empirical researchers often use instrumental variables (IVs) to estimate a local
 
 **"Relatives in the Workplace: The Formation and Growth of Family Firms"**
 
-**"Intergenerational Transfers, Entrepreneurial Entry, and Firm Performance"**
+**"Intergenerational Finance, Entrepreneurial Entry, and Firm Performance"**
 *with [Luigi Pistaferri](https://sites.google.com/view/pistaferri/home) and [Alessandra Voena](https://avoena.people.stanford.edu)*
 
 
