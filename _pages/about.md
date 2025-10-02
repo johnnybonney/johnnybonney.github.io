@@ -5,7 +5,7 @@ permalink: /
 author_profile: true
 ---
 
-I am a Ph.D. candidate in economics at Stanford University, specializing in labor economics, entrepreneurial finance, and applied econometrics. My research examines how entrepreneurs' access to human and financial capital shapes firm entry and growth, and I develop methods for leveraging instrumental variables when treatment effects vary across individuals.
+I am a Ph.D. candidate in economics at Stanford University, specializing in labor economics, entrepreneurial finance, and applied econometrics. I study how entrepreneurs' access to human and financial capital shapes firm entry and growth. Motivated by the challenges that arise in my applied work, I also develop methods for leveraging instrumental variables when treatment effects vary across individuals.
 
 My dissertation research has been supported by the [National Science Foundation](https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program) and the [Stanford Institute for Economic Policy Research](https://siepr.stanford.edu).
 
