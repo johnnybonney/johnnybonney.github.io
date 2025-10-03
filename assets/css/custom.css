@@ -2,16 +2,22 @@
 /* Hide hamburger + hidden menu */
 .masthead .greedy-nav > button,
 .greedy-nav__toggle,
-.greedy-nav .hidden-links { display: none !important; }
+.greedy-nav .hidden-links {
+  display: none !important;
+}
 
 /* Hide dark-mode toggle */
-#theme-toggle { display: none !important; }
+#theme-toggle {
+  display: none !important;
+}
 
 /* Hide “Follow” under photo + full footer block */
 .author__urls-wrapper,
 .page__footer,
 .page__footer-follow,
-.page__footer-copyright { display: none !important; }
+.page__footer-copyright {
+  display: none !important;
+}
 
 /* Keep site title on one line; size it nicely */
 .masthead__menu-item.masthead__menu-item--lg a {
@@ -34,6 +40,7 @@
   border-radius: 0 !important;     /* 50% = circle if you ever want it */
   text-align: center;
 }
+
 .author__avatar img,
 img.author__avatar {
   width: 100% !important;
@@ -46,17 +53,24 @@ img.author__avatar {
 }
 
 .photo-credit {
-  font-size: 0.5rem;
+  font-size: 0.65rem;    /* slightly larger than before, still subtle */
   color: #777;
   text-align: center;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 /* ===================== ABSTRACT DROPDOWNS ===================== */
-.page__content details { margin-top: 0 !important; margin-bottom: 1rem; }
-.page__content p + details { margin-top: 0.25rem !important; }
+.page__content details {
+  margin-top: 0 !important;
+  margin-bottom: 1rem;
+}
+.page__content p + details {
+  margin-top: 0.25rem !important;
+}
 @supports selector(:has(*)) {
-  .page__content p:has(+ details) { margin-bottom: 0.25rem !important; }
+  .page__content p:has(+ details) {
+    margin-bottom: 0.25rem !important;
+  }
 }
 .page__content details summary {
   padding: 0.2rem 0;
@@ -65,13 +79,16 @@ img.author__avatar {
 }
 
 /* ===================== DESKTOP LAYOUT & BIGGER PHOTO ===================== */
-/* Desktop-only: keep theme layout; just allow a bigger avatar cap */
+/* Desktop: widen sidebar and let photo scale up */
 @media (min-width: 1024px) {
   .layout--single .sidebar {
-    flex: 0 0 360px !important;   /* widen sidebar slightly (theme-safe) */
-    max-width: 360px !important;
+    flex: 0 0 420px !important;   /* widen sidebar (default ~300px) */
+    max-width: 420px !important;
   }
   .layout--single .sidebar .author__avatar {
-    max-width: 340px !important;  /* headshot grows within the wider sidebar */
+    max-width: 380px !important;  /* bigger headshot */
+  }
+  .layout--single .page__content {
+    max-width: 800px !important;  /* keep text from feeling squeezed */
   }
 }
