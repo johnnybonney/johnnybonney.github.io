@@ -79,16 +79,24 @@ img.author__avatar {
 }
 
 /* ===================== DESKTOP LAYOUT & BIGGER PHOTO ===================== */
-/* Desktop: widen sidebar and let photo scale up */
+
+/* Desktop-only: force a larger headshot, without touching layout */
 @media (min-width: 1024px) {
-  .layout--single .sidebar {
-    flex: 0 0 420px !important;   /* widen sidebar (default ~300px) */
-    max-width: 420px !important;
+  .avatar--xl {
+    width: 400px !important;      /* try 360–420px to taste */
+    height: 400px !important;
+    max-width: none !important;   /* ignore theme caps */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    overflow: hidden !important;
+    border-radius: 0 !important;
   }
-  .layout--single .sidebar .author__avatar {
-    max-width: 380px !important;  /* bigger headshot */
-  }
-  .layout--single .page__content {
-    max-width: 800px !important;  /* keep text from feeling squeezed */
+  .avatar--xl img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
   }
 }
