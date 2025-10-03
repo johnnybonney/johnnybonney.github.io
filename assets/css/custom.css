@@ -80,21 +80,28 @@ img.author__avatar {
 
 /* ===================== DESKTOP LAYOUT & BIGGER PHOTO ===================== */
 
-/* Desktop-only: force a larger headshot, without touching layout */
+/* === Desktop: widen the sidebar so the larger photo fits === */
 @media (min-width: 1024px) {
-  .avatar--xl {
-    width: 400px !important;      /* try 360–420px to taste */
-    height: 400px !important;
-    max-width: none !important;   /* ignore theme caps */
-    margin-left: auto !important;
-    margin-right: auto !important;
-    overflow: hidden !important;
-    border-radius: 0 !important;
+  /* Make the sidebar wider on single-page layout */
+  .layout--single .sidebar,
+  .layout--single .sidebar.sticky {
+    flex: 0 0 420px !important;   /* was ~300px */
+    max-width: 420px !important;
+    width: 420px !important;
   }
-  .avatar--xl img {
+
+  /* Size the avatar *within* that wider sidebar */
+  .layout--single .sidebar .avatar--xl {
+    width: 100% !important;       /* fill sidebar column */
+    max-width: 380px !important;  /* keep a little gutter */
+    height: auto !important;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto 12px auto !important;
+    overflow: hidden !important;
+  }
+  .layout--single .sidebar .avatar--xl img {
     width: 100% !important;
     height: 100% !important;
-    max-width: none !important;
     object-fit: cover !important;
     object-position: center !important;
     display: block !important;
