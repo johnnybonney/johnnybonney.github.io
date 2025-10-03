@@ -139,26 +139,24 @@ img.author__avatar {
   }
 }
 
-/* === MOBILE TIGHTEN-UP (phones & small tablets) === */
-@media (max-width: 767px) {
-  /* Kill extra gap under the header */
-  .masthead { margin-bottom: 0 !important; }
+/* ===================== MOBILE/TABLET: tighten headshot spacing ===================== */
+@media (max-width:1023px){
+  /* remove extra gap under the header */
+  .masthead{ margin-bottom:0 !important; }
 
-  /* Start the sidebar/photo right under the masthead */
+  /* zero out the sidebar's top spacing (affects when scrolled to top) */
   #main .sidebar,
-  .sidebar {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
+  .sidebar{
+    padding-top:0 !important;
+    margin-top:0 !important;
   }
 
-  /* Nudge the photo slightly upward and keep it centered */
-  .sidebar .author__avatar {
-    margin-top: 6px !important;
-  }
+  /* make sure the avatar itself isn't adding spacing */
+  .author__avatar{ margin-top:0 !important; }
 
-  /* Avoid sticky offset causing a big top gap on scroll */
-  #main .sidebar.sticky {
-    position: static !important;   /* disables sticky on mobile */
-    top: auto !important;
+  /* disable sticky on mobile to avoid offset gap */
+  #main .sidebar.sticky{
+    position:static !important;
+    top:auto !important;
   }
 }
