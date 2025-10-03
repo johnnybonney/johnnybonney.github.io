@@ -31,13 +31,13 @@
 /* ===================== SIDEBAR PHOTO ===================== */
 /* Responsive, square headshot; centered */
 .author__avatar {
-  width: 100% !important;          /* fill sidebar width */
-  max-width: 320px !important;     /* cap on mobile/tablet */
-  aspect-ratio: 1 / 1;             /* keep square */
+  width: 100% !important;
+  max-width: 320px !important;   /* cap on mobile/tablet */
+  aspect-ratio: 1 / 1;
   margin: 0 auto 12px auto !important;
   display: block !important;
   overflow: hidden !important;
-  border-radius: 0 !important;     /* 50% = circle if you ever want it */
+  border-radius: 0 !important;   /* 50% = circle if desired */
   text-align: center;
 }
 
@@ -53,7 +53,7 @@ img.author__avatar {
 }
 
 .photo-credit {
-  font-size: 0.65rem;    /* slightly larger than before, still subtle */
+  font-size: 0.65rem;
   color: #777;
   text-align: center;
   margin-top: 4px;
@@ -78,28 +78,59 @@ img.author__avatar {
   font-weight: 600;
 }
 
-/* ===================== DESKTOP LAYOUT & BIGGER PHOTO ===================== */
-
-/* === Desktop: widen the sidebar so the larger photo fits === */
+/* ===================== DESKTOP LAYOUT: SIDEBAR + CONTENT ===================== */
 @media (min-width: 1024px) {
-  /* Make the sidebar wider on single-page layout */
-  .layout--single .sidebar,
-  .layout--single .sidebar.sticky {
-    flex: 0 0 420px !important;   /* was ~300px */
-    max-width: 420px !important;
-    width: 420px !important;
+  /* Grid layout: sidebar + main content */
+  #main {
+    display: grid !important;
+    grid-template-columns: 420px minmax(0,1fr) !important; /* wider sidebar */
+    gap: 32px !important;
+    align-items: start !important;
   }
 
-  /* Size the avatar *within* that wider sidebar */
-  .layout--single .sidebar .avatar--xl {
-    width: 100% !important;       /* fill sidebar column */
-    max-width: 380px !important;  /* keep a little gutter */
-    height: auto !important;
+  /* Sidebar behavior */
+  #main .sidebar {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    position: relative !important;
+    width: auto !important;
+    max-width: none !important;
+    float: none !important;
+    flex: none !important;
+  }
+  #main .sidebar.sticky {
+    position: sticky !important;
+    top: 100px !important;  /* breathing room under masthead when scrolling */
+  }
+
+  /* Uncap all theme width clamps */
+  .initial-content,
+  .page,
+  .page__inner-wrap,
+  .wrap,
+  .container {
+    max-width: none !important;
+    width: auto !important;
+    margin: 0 !important;
+  }
+
+  /* Wider reading column */
+  .page__content {
+    max-width: 1100px !important;  /* adjust: 1000–1200px to taste */
+    width: 100% !important;
+    margin: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Bigger square avatar inside wider sidebar */
+  #main .sidebar .author__avatar {
+    width: 100% !important;
+    max-width: 360px !important;   /* larger than mobile cap */
     aspect-ratio: 1 / 1;
     margin: 0 auto 12px auto !important;
     overflow: hidden !important;
   }
-  .layout--single .sidebar .avatar--xl img {
+  #main .sidebar .author__avatar img {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
