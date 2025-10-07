@@ -5,7 +5,7 @@ permalink: /
 author_profile: true
 ---
 
-I am a Ph.D. candidate in economics at Stanford University, specializing in labor economics, entrepreneurial finance, and applied econometrics. I study how entrepreneurs' access to human and financial capital shapes firm entry and growth. Motivated by the challenges that arise in my applied work, I also develop methods for leveraging instrumental variables when treatment effects vary across individuals.
+I am a Ph.D. candidate in economics at Stanford University, specializing in labor economics, entrepreneurial finance, and applied econometrics. I study how entrepreneurs' access to human and financial capital shapes firm entry and performance. Motivated by the challenges that arise in my applied work, I also develop methods for leveraging instrumental variables when treatment effects vary across individuals.
 
 My dissertation research has been supported by the [National Science Foundation](https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program) and the [Stanford Institute for Economic Policy Research](https://siepr.stanford.edu).
 
@@ -23,13 +23,13 @@ Isaac Sorkin: [sorkin@stanford.edu](mailto: sorkin@stanford.edu)
 **"How Network Hiring by Entrepreneurs Shapes Firm Formation and Performance"**  
 *Draft coming soon!*
 
-<u>Abstract:</u> Many entrepreneurs rely on their personal networks to hire their first employees. How important is this practice for the formation and performance of new firms? I study this question using administrative data on corporations founded in Norway from 2001 to 2018, linking entrepreneurs to their firms, employees, and former coworkers. To identify causal effects, I develop an instrumental variables framework that jointly models entry and network hiring, allowing for endogenous selection on both margins. The results reveal three main findings. First, each ex-coworker hired in the firm’s first year raises annual revenues in the following four years by roughly $300K and crowds in other hires, without lowering productivity. Second, without the ability to hire ex-coworkers, about half of network-hiring entrepreneurs would forgo recruiting early-stage employees and a quarter would not start firms at all. Third, counterfactual simulations show that, compared to entry subsidies, networks enable entry of entrepreneurs who create substantially more jobs, survive longer, and achieve higher value added per worker. Taken together, the evidence suggests that access to networks is not just convenient, but rather a decisive factor enabling the entry and success of high-potential entrepreneurs.
+<u>Abstract:</u> Many entrepreneurs rely on their personal networks to hire their first employees. How important is this practice for the formation and performance of new firms? I study this question using Norwegian administrative data that allow me to link entrepreneurs to their firms, employees, and former coworkers. To identify causal effects, I develop an instrumental variables framework that jointly models entry and network hiring, allowing for endogenous selection on both margins. The results reveal three main findings. First, each ex-coworker hired in the firm’s first year raises annual revenues in the following four years by roughly $300K and crowds in other hires, without reducing average productivity. Second, without the ability to hire ex-coworkers, a quarter of network-hiring entrepreneurs would not have started their firms at all. Third, counterfactual simulations show that, compared to entry subsidies, networks enable entry of entrepreneurs who create substantially more jobs, survive longer, and achieve higher value added per worker. Interpreted through the lens of a simple model, the data suggest that private information about coworker quality is a key driver of network hiring. Taken together, the results show that access to networks is not just convenient, but rather a decisive factor enabling the entry and performance of high-potential entrepreneurs.
 
 ## Working papers
 
 **"When is TSLS *Actually* LATE?"**
 *with [Christine Blandhol](https://sites.google.com/view/cblandhol), [Magne Mogstad](https://sites.google.com/site/magnemogstad/), and [Alexander Torgovitsky](https://a-torgovitsky.github.io)*  
-R&R (2nd round) at the Review of Economic Studies  
+Accepted at the Review of Economic Studies  
 [PDF](/files/tslslate.pdf) | [NBER working paper 29709](https://www.nber.org/papers/w29709)
 <details>
   <summary><em>Abstract</em></summary>
@@ -38,7 +38,7 @@ R&R (2nd round) at the Review of Economic Studies
 
 **"Childbirth and Firm Performance: Evidence from Norwegian Entrepreneurs"**
 *with [Luigi Pistaferri](https://sites.google.com/view/pistaferri/home) and [Alessandra Voena](https://avoena.people.stanford.edu)*  
-R&R at the Journal of Labor Economics  
+Resubmitted at the Journal of Labor Economics  
 [PDF](/files/childbirth-firms.pdf) | [NBER working paper 33448](https://www.nber.org/papers/w33448)
 <details>
   <summary><em>Abstract</em></summary>
