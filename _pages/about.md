@@ -14,7 +14,7 @@ I am on the academic job market in 2025-2026.
 You can download my CV [**here**](/files/Bonney_CV.pdf), and you can reach me at [jbonney@stanford.edu](mailto:jbonney@stanford.edu).
 
 **Committee:**  
-Luigi Pistafferri (co-primary): [pista@stanford.edu](mailto: pista@stanford.edu)  
+Luigi Pistaferri (co-primary): [pista@stanford.edu](mailto: pista@stanford.edu)  
 Alessandra Voena (co-primary): [avoena@stanford.edu](mailto: avoena@stanford.edu)  
 Isaac Sorkin: [sorkin@stanford.edu](mailto: sorkin@stanford.edu)
 
