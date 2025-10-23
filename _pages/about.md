@@ -11,7 +11,9 @@ My dissertation research has been supported by the [National Science Foundation]
 
 I am on the academic job market in 2025-2026.
 
-You can download my CV [**here**](/files/Bonney_CV.pdf), and you can reach me at [jbonney@stanford.edu](mailto:jbonney@stanford.edu).
+You can download my CV <a href="/files/Bonney_CV.pdf"
+onclick="gtag('event', 'cv_download_click', {'file_name': 'Bonney_CV.pdf'});">
+<strong>here</strong></a>, and you can reach me at [jbonney@stanford.edu](mailto:jbonney@stanford.edu).
 
 **Committee:**  
 Luigi Pistaferri (co-primary): [pista@stanford.edu](mailto: pista@stanford.edu)  
@@ -20,7 +22,10 @@ Isaac Sorkin: [sorkin@stanford.edu](mailto: sorkin@stanford.edu)
 
 ## Job market paper
 
-[**"How Network Hiring by Entrepreneurs Shapes Firm Formation and Performance"**](/files/johnbonney_JMP.pdf)
+<a href="/files/johnbonney_JMP.pdf"
+onclick="gtag('event', 'jmp_download_click', {'file_name': 'johnbonney_JMP.pdf'});">
+<strong>“How Network Hiring by Entrepreneurs Shapes Firm Formation and Performance”</strong>
+</a>
 
 <u>Abstract:</u> Many entrepreneurs rely on their personal networks to hire their first employees. How important is this practice for the formation and performance of new firms? I study this question using Norwegian administrative data that allow me to link entrepreneurs to their firms, employees, and former coworkers. To identify causal effects, I develop an instrumental variables framework that jointly models entry and network hiring, allowing for endogenous selection on both margins. The results reveal three main findings. First, each ex-coworker hired in the firm’s first year raises annual revenues in the following four years by over $250K and crowds in other hires, without reducing average productivity. Second, without the ability to hire ex-coworkers, a quarter of network-hiring entrepreneurs would not have started their firms at all. Third, counterfactual simulations show that, compared to entry subsidies, networks enable entry of entrepreneurs who create substantially more jobs, survive longer, and achieve higher value added per worker. Interpreted through the lens of a simple model, the data suggest that private information about coworker quality is a key driver of network hiring. Taken together, the results show that access to human capital through networks is an important determinant of entrepreneurial entry and success.
 
