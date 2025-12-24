@@ -42,7 +42,7 @@ Accepted at the Review of Economic Studies
 
 **"Childbirth and Firm Performance: Evidence from Norwegian Entrepreneurs"**
 *with [Luigi Pistaferri](https://sites.google.com/view/pistaferri/home) and [Alessandra Voena](https://avoena.people.stanford.edu)*  
-Resubmitted at the Journal of Labor Economics  
+Accepted at the Journal of Labor Economics  
 [PDF](/files/childbirth-firms.pdf) | [NBER working paper 33448](https://www.nber.org/papers/w33448)
 <details>
   <summary><em>Abstract</em></summary>
