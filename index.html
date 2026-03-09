@@ -68,14 +68,14 @@
     /* Hero */
     .hero {
       display: grid;
-      grid-template-columns: 200px 1fr;
+      grid-template-columns: 260px 1fr;
       gap: 2.4rem;
       align-items: start;
       margin-bottom: 4rem;
     }
     .hero img {
-      width: 200px;
-      height: 248px;
+      width: 260px;
+      height: 322px;
       object-fit: cover;
       object-position: top center;
       display: block;
@@ -230,7 +230,7 @@
     @media (max-width: 560px) {
       html { font-size: 16px; }
       .hero { grid-template-columns: 1fr; }
-      .hero img { width: 150px; height: 186px; }
+      .hero img { width: 195px; height: 242px; }
       nav ul { gap: 1rem; }
     }
   </style>
@@ -258,7 +258,7 @@
         I am an economist studying entrepreneurship, new firms, and labor markets. My research examines how entrepreneurs' access to human and financial capital shapes firm entry and performance. My work has been supported by the National Science Foundation and the Stanford Institute for Economic Policy Research.
       </p>
       <p class="bio" style="margin-top:-0.6rem;">
-        I will join the NYU Stern School of Business as an Assistant Professor of Finance in Fall 2026.
+        I will join the Finance Department at NYU Stern School of Business as an Assistant Professor in Fall 2026.
       </p>
       <div class="links">
         <a href="mailto:jbonney@stanford.edu">jbonney@stanford.edu</a>
@@ -384,4 +384,12 @@
 
 </div>
 
-<script data-cfasync="false" src="/c
+<script>
+  function toggleAbstract(btn) {
+    const abstract = btn.closest('.paper-links').nextElementSibling;
+    const isOpen = abstract.classList.toggle('open');
+    btn.textContent = isOpen ? 'Hide abstract' : 'Abstract';
+  }
+</script>
+</body>
+</html>
