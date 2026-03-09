@@ -68,14 +68,14 @@
     /* Hero */
     .hero {
       display: grid;
-      grid-template-columns: 170px 1fr;
+      grid-template-columns: 200px 1fr;
       gap: 2.4rem;
       align-items: start;
       margin-bottom: 4rem;
     }
     .hero img {
-      width: 170px;
-      height: 210px;
+      width: 200px;
+      height: 248px;
       object-fit: cover;
       object-position: top center;
       display: block;
@@ -230,7 +230,7 @@
     @media (max-width: 560px) {
       html { font-size: 16px; }
       .hero { grid-template-columns: 1fr; }
-      .hero img { width: 130px; height: 162px; }
+      .hero img { width: 150px; height: 186px; }
       nav ul { gap: 1rem; }
     }
   </style>
@@ -255,15 +255,15 @@
         Stanford University
       </p>
       <p class="bio">
-        I am an economist studying labor markets and entrepreneurship. My research examines how entrepreneurs' access to human and financial capital shapes firm entry and performance. I also develop methods for leveraging instrumental variables when treatment effects vary across individuals.
+        I am an economist studying entrepreneurship, new firms, and labor markets. My research examines how entrepreneurs' access to human and financial capital shapes firm entry and performance. My work has been supported by the National Science Foundation and the Stanford Institute for Economic Policy Research.
       </p>
       <p class="bio" style="margin-top:-0.6rem;">
-        I will join the <a href="https://www.stern.nyu.edu/faculty/academic-departments/finance" style="color:var(--link);text-decoration:none;border-bottom:1px solid var(--border);">Finance Department at NYU Stern School of Business</a> as an Assistant Professor in Fall 2026.
+        I will join the NYU Stern School of Business as an Assistant Professor of Finance in Fall 2026.
       </p>
       <div class="links">
         <a href="mailto:jbonney@stanford.edu">jbonney@stanford.edu</a>
         <a href="/files/Bonney_CV.pdf">Curriculum vitae</a>
-        <a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a>
+        <a href="https://scholar.google.com/citations?user=D6iYU6cAAAAJ">Google Scholar</a>
       </div>
     </div>
   </div>
@@ -271,8 +271,8 @@
   <div class="committee">
     <p>
       <strong>Dissertation committee:</strong>&ensp;
-      <a href="mailto:pista@stanford.edu">Luigi Pistaferri</a> (co-chair),
-      <a href="mailto:avoena@stanford.edu">Alessandra Voena</a> (co-chair),
+      <a href="mailto:pista@stanford.edu">Luigi Pistaferri</a>,
+      <a href="mailto:avoena@stanford.edu">Alessandra Voena</a>,
       <a href="#">Isaac Sorkin</a>
     </p>
   </div>
@@ -284,6 +284,7 @@
     <div class="paper">
       <div class="paper-title">
         <a href="/files/johnbonney_JMP.pdf">How Network Hiring by Entrepreneurs Shapes Firm Formation and Performance</a>
+        <span style="font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:400;color:var(--muted);margin-left:0.5rem;">(job market paper)</span>
       </div>
       <div class="paper-links">
         <a href="/files/johnbonney_JMP.pdf">PDF</a>
@@ -304,7 +305,7 @@
       </div>
       <div class="paper-links">
         <a href="/files/tslslate.pdf">PDF</a>
-        <a href="https://www.nber.org/papers/w29709">NBER #29709</a>
+        <a href="https://www.nber.org/papers/w29709">NBER working paper 29709</a>
         <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
       </div>
       <div class="abstract-body">
@@ -322,7 +323,7 @@
       </div>
       <div class="paper-links">
         <a href="/files/childbirth-firms.pdf">PDF</a>
-        <a href="https://www.nber.org/papers/w33448">NBER #33448</a>
+        <a href="https://www.nber.org/papers/w33448">NBER working paper 33448</a>
         <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
       </div>
       <div class="abstract-body">
@@ -383,12 +384,4 @@
 
 </div>
 
-<script>
-  function toggleAbstract(btn) {
-    const abstract = btn.closest('.paper-links').nextElementSibling;
-    const isOpen = abstract.classList.toggle('open');
-    btn.textContent = isOpen ? 'Hide abstract' : 'Abstract';
-  }
-</script>
-</body>
-</html>
+<script data-cfasync="false" src="/c
