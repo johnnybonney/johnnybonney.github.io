@@ -200,8 +200,8 @@
     }
     .paper-links a:hover { border-color: var(--link); }
 
-    /* Abstract toggle */
-    .abstract-toggle {
+    /* Abstract / BibTeX toggles */
+    .abstract-toggle, .bibtex-toggle {
       font-family: 'DM Sans', sans-serif;
       font-size: 0.8rem;
       color: var(--muted);
@@ -214,7 +214,7 @@
       text-decoration-color: var(--border);
       transition: color 0.15s;
     }
-    .abstract-toggle:hover { color: var(--text); text-decoration-color: var(--text); }
+    .abstract-toggle:hover, .bibtex-toggle:hover { color: var(--text); text-decoration-color: var(--text); }
     .abstract-body {
       display: none;
       margin-top: 0.75rem;
@@ -223,6 +223,37 @@
       line-height: 1.75;
     }
     .abstract-body.open { display: block; }
+
+    /* BibTeX */
+    .bibtex-body { display: none; margin-top: 0.75rem; }
+    .bibtex-body.open { display: block; }
+    .bibtex-body pre {
+      margin: 0;
+      padding: 0.9rem 1rem;
+      background: var(--committee-bg);
+      border: 1px solid var(--committee-border);
+      border-radius: 3px;
+      overflow-x: auto;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.78rem;
+      line-height: 1.6;
+      color: var(--text);
+    }
+    .bibtex-copy {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      color: var(--muted);
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0;
+      margin-top: 0.45rem;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      text-decoration-color: var(--border);
+      transition: color 0.15s;
+    }
+    .bibtex-copy:hover { color: var(--text); text-decoration-color: var(--text); }
 
     /* Footer */
     footer {
@@ -286,9 +317,20 @@
         <a href="/files/johnbonney_JMP.pdf">PDF</a>
         <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7471761">SSRN</a>
         <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+        <button class="bibtex-toggle" onclick="toggleBibtex(this)">BibTeX</button>
       </div>
       <div class="abstract-body">
         Many entrepreneurs rely on their personal networks to hire their first employees. How important is this practice for the formation and performance of new firms? I study this question using Norwegian administrative data that allow me to link entrepreneurs to their firms, employees, and former coworkers. To identify causal effects, I develop an instrumental variables framework that jointly models entry and network hiring, allowing for endogenous selection on both margins. The results reveal three main findings. First, each ex-coworker hired in the firm’s first year raises annual revenues in the following four years by over $250K and crowds in other hires, without reducing average productivity. Second, without the ability to hire ex-coworkers, a quarter of network-hiring entrepreneurs would not have started their firms at all. Third, counterfactual simulations show that, compared to entry subsidies, networks enable entry of entrepreneurs who create substantially more jobs, survive longer, and achieve higher value added per worker. Interpreted through the lens of a simple model, the data suggest that private information about coworker quality is a key driver of network hiring. Taken together, the results show that access to human capital through networks is an important determinant of entrepreneurial entry and success.
+      </div>
+      <div class="bibtex-body">
+        <pre><code>@unpublished{bonney2025network,
+  author = {Bonney, John F.},
+  title  = {How Network Hiring by Entrepreneurs Shapes Firm Formation and Performance},
+  year   = {2025},
+  note   = {Working paper},
+  url    = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7471761}
+}</code></pre>
+        <button class="bibtex-copy" onclick="copyBibtex(this)">Copy</button>
       </div>
     </div>
 
@@ -304,9 +346,24 @@
         <a href="/files/tslslate.pdf">PDF</a>
         <a href="https://www.nber.org/papers/w29709">NBER working paper 29709</a>
         <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+        <button class="bibtex-toggle" onclick="toggleBibtex(this)">BibTeX</button>
       </div>
       <div class="abstract-body">
         Linear instrumental variable estimators, such as two-stage least squares (TSLS), are commonly interpreted as estimating non-negatively weighted averages of causal effects, referred to as local average treatment effects (LATEs). We examine whether the LATE interpretation actually applies to the types of TSLS specifications that are used in practice. We show that if the specification includes covariates—which most empirical work does—then the LATE interpretation does not apply in general. Instead, the TSLS estimator will, in general, reflect treatment effects for both compliers and always/never-takers, and some treatment effects for the always/never-takers will necessarily be negatively weighted. We show that the only specifications that have a LATE interpretation are “saturated” specifications that control for covariates nonparametrically, implying that such specifications are both sufficient and necessary for TSLS to have a LATE interpretation, at least without additional parametric assumptions. This result is concerning because, as we document, empirical researchers almost never control for covariates nonparametrically, and rarely discuss or justify parametric specifications of covariates. We apply our results to thirteen empirical studies and find strong evidence that the LATE interpretation of TSLS is far from accurate for the types of specifications actually used in practice. We offer concrete recommendations for practice motivated by our theoretical and empirical results.
+      </div>
+      <div class="bibtex-body">
+        <pre><code>@techreport{blandhol2025tsls,
+  author      = {Blandhol, Christine and Bonney, John and Mogstad, Magne and Torgovitsky, Alexander},
+  title       = {When is {TSLS} Actually {LATE}?},
+  institution = {National Bureau of Economic Research},
+  type        = {Working Paper},
+  series      = {Working Paper Series},
+  number      = {29709},
+  year        = {2025},
+  doi         = {10.3386/w29709},
+  url         = {https://www.nber.org/papers/w29709}
+}</code></pre>
+        <button class="bibtex-copy" onclick="copyBibtex(this)">Copy</button>
       </div>
     </div>
 
@@ -322,9 +379,24 @@
         <a href="/files/childbirth-firms.pdf">PDF</a>
         <a href="https://www.nber.org/papers/w33448">NBER working paper 33448</a>
         <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+        <button class="bibtex-toggle" onclick="toggleBibtex(this)">BibTeX</button>
       </div>
       <div class="abstract-body">
         Using multiple administrative data sources from Norway, we examine how firm performance changes after entrepreneurs become parents. Female-owned businesses experience a substantial decline in profits, steadily decreasing to 30% below baseline ten years post-childbirth. In contrast, male-owned businesses show no decline, often growing in revenues and costs after childbirth. The profit decline for female-owned firms is most pronounced among highly capable entrepreneurs, women who are majority owners, and those with working spouses. Entrepreneurial effort is key to performance, and our findings suggest that time demands from childbirth and childcare are a significant determinant of the decline in firm profits.
+      </div>
+      <div class="bibtex-body">
+        <pre><code>@techreport{bonney2025childbirth,
+  author      = {Bonney, John and Pistaferri, Luigi and Voena, Alessandra},
+  title       = {Childbirth and Firm Performance: Evidence from {Norwegian} Entrepreneurs},
+  institution = {National Bureau of Economic Research},
+  type        = {Working Paper},
+  series      = {Working Paper Series},
+  number      = {33448},
+  year        = {2025},
+  doi         = {10.3386/w33448},
+  url         = {https://www.nber.org/papers/w33448}
+}</code></pre>
+        <button class="bibtex-copy" onclick="copyBibtex(this)">Copy</button>
       </div>
     </div>
 
@@ -371,9 +443,40 @@
 
 <script>
   function toggleAbstract(btn) {
-    const abstract = btn.closest('.paper-links').nextElementSibling;
+    const abstract = btn.closest('.paper').querySelector('.abstract-body');
     const isOpen = abstract.classList.toggle('open');
     btn.textContent = isOpen ? 'Hide abstract' : 'Abstract';
+  }
+
+  function toggleBibtex(btn) {
+    const bib = btn.closest('.paper').querySelector('.bibtex-body');
+    const isOpen = bib.classList.toggle('open');
+    btn.textContent = isOpen ? 'Hide BibTeX' : 'BibTeX';
+  }
+
+  function copyBibtex(btn) {
+    const text = btn.closest('.bibtex-body').querySelector('code').textContent;
+    const done = function () {
+      btn.textContent = 'Copied';
+      setTimeout(function () { btn.textContent = 'Copy'; }, 1600);
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(done, function () { copyFallback(text, done); });
+    } else {
+      copyFallback(text, done);
+    }
+  }
+
+  function copyFallback(text, done) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.top = '-1000px';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); done(); } catch (e) { /* clipboard unavailable */ }
+    document.body.removeChild(ta);
   }
 </script>
 </body>
