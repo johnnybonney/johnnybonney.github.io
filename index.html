@@ -40,37 +40,7 @@
       padding: 0 1.5rem;
     }
 
-    .site { max-width: var(--max); margin: 0 auto; }
-
-    /* Nav */
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 2.4rem 0 0;
-      margin-bottom: 3.8rem;
-    }
-    nav .name {
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 500;
-      font-size: 0.88rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: var(--text);
-      text-decoration: none;
-    }
-    nav ul { list-style: none; display: flex; gap: 1.8rem; }
-    nav ul a {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.82rem;
-      font-weight: 400;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.15s;
-    }
-    nav ul a:hover { color: var(--text); }
+    .site { max-width: var(--max); margin: 0 auto; padding-top: 3.5rem; }
 
     /* Hero */
     .hero {
@@ -269,19 +239,11 @@
       html { font-size: 16px; }
       .hero { grid-template-columns: 1fr; }
       .hero img { width: 195px; height: 242px; }
-      nav ul { gap: 1rem; }
     }
   </style>
 </head>
 <body>
 <div class="site">
-
-  <nav>
-    <ul>
-      <li><a href="#research">Research</a></li>
-      <li><a href="/files/Bonney_CV.pdf">CV</a></li>
-    </ul>
-  </nav>
 
   <div class="hero">
     <img src="images/profile.jpg" alt="John Bonney" />
