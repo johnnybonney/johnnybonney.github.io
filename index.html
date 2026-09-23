@@ -70,10 +70,16 @@
       font-weight: 400;
       color: var(--muted);
       letter-spacing: 0.01em;
-      margin-bottom: 1.1rem;
       line-height: 1.6;
     }
-    .hero-text .affil-logo { display: block; margin-top: 0.25rem; }
+    .hero-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.4rem;
+    }
+    .hero-head .affil-logo { flex-shrink: 0; }
     .hero-text .bio {
       font-size: 1rem;
       color: var(--text);
@@ -206,6 +212,7 @@
     @media (max-width: 560px) {
       html { font-size: 16px; }
       .hero { grid-template-columns: 1fr; }
+      .hero-head .affil-logo { width: 122px; height: auto; }
       .hero > img { width: 195px; height: 242px; }
     }
   </style>
@@ -216,11 +223,16 @@
   <div class="hero">
     <img src="images/profile.jpg" alt="John Bonney" />
     <div class="hero-text">
-      <h1>John F. Bonney</h1>
-      <p class="position">
-        Assistant Professor, Department of Finance<br>
-        <img class="affil-logo" src="images/nyu-stern-logo.png" alt="NYU Stern School of Business" width="146" height="24" />
-      </p>
+      <div class="hero-head">
+        <div>
+          <h1>John F. Bonney</h1>
+          <p class="position">
+            Assistant Professor, Department of Finance<br>
+            NYU Stern School of Business
+          </p>
+        </div>
+        <img class="affil-logo" src="images/nyu-stern-logo.png" alt="NYU Stern" width="183" height="30" />
+      </div>
       <p class="bio">
         I am an economist studying entrepreneurship, new firms, and labor markets. My research examines how entrepreneurs' access to human and financial capital shapes firm entry and performance. I also develop econometric methods for causal inference, with a focus on the interpretation and use of instrumental variable estimators.
       </p>
