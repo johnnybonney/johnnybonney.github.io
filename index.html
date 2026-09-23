@@ -50,7 +50,7 @@
       align-items: start;
       margin-bottom: 4rem;
     }
-    .hero img {
+    .hero > img {
       width: 285px;
       height: 353px;
       object-fit: cover;
@@ -70,11 +70,10 @@
       font-weight: 400;
       color: var(--muted);
       letter-spacing: 0.01em;
-      margin-bottom: 1.4rem;
+      margin-bottom: 1.1rem;
       line-height: 1.6;
     }
-    .hero-text .position a { color: var(--link); text-decoration: none; }
-    .hero-text .position a:hover { text-decoration: underline; }
+    .hero-text .affil-logo { display: block; margin-top: 0.25rem; }
     .hero-text .bio {
       font-size: 1rem;
       color: var(--text);
@@ -207,7 +206,7 @@
     @media (max-width: 560px) {
       html { font-size: 16px; }
       .hero { grid-template-columns: 1fr; }
-      .hero img { width: 195px; height: 242px; }
+      .hero > img { width: 195px; height: 242px; }
     }
   </style>
 </head>
@@ -220,7 +219,7 @@
       <h1>John F. Bonney</h1>
       <p class="position">
         Assistant Professor, Department of Finance<br>
-        <a href="https://www.stern.nyu.edu/faculty/bio/john-bonney">NYU Stern School of Business</a>
+        <img class="affil-logo" src="images/nyu-stern-logo.png" alt="NYU Stern School of Business" width="146" height="24" />
       </p>
       <p class="bio">
         I am an economist studying entrepreneurship, new firms, and labor markets. My research examines how entrepreneurs' access to human and financial capital shapes firm entry and performance. I also develop econometric methods for causal inference, with a focus on the interpretation and use of instrumental variable estimators.
