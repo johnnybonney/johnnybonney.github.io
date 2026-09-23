@@ -20,11 +20,11 @@
       --bg: #ffffff;
       --text: #111111;
       --muted: #555555;
-      --link: #1a4480;
+      --link: #57068c;
       --border: #d9d9d9;
       --code-bg: #f5f5f5;
-      --status: #2d5a27;
       --footer: #888888;
+      --violet: #57068c;
       --max: 840px;
     }
 
@@ -37,10 +37,22 @@
       background: var(--bg);
       color: var(--text);
       line-height: 1.7;
-      padding: 0 1.5rem;
+      background: var(--bg);
     }
 
-    .site { max-width: var(--max); margin: 0 auto; padding-top: 3.5rem; }
+    /* Page column; the banner spans its width */
+    .page {
+      max-width: calc(var(--max) + 6rem);
+      min-height: 100vh;
+      margin: 0 auto;
+      background: var(--bg);
+    }
+
+    /* Banner */
+    .banner { background: var(--violet); padding: 16px 3rem; }
+    .banner img { display: block; height: 40px; width: auto; }
+
+    .site { padding: 3.5rem 3rem 0; }
 
     /* Hero */
     .hero {
@@ -125,9 +137,9 @@
       margin-bottom: 0.55rem;
       line-height: 1.5;
     }
-    .paper-meta .status { font-style: italic; color: var(--status); }
-    .paper-meta a { color: var(--link); text-decoration: none; }
-    .paper-meta a:hover { text-decoration: underline; }
+    .paper-meta .status { font-style: italic; color: var(--text); }
+    .paper-meta a { color: var(--text); text-decoration: none; }
+    .paper-meta a:hover { color: var(--link); text-decoration: underline; }
     .paper-links {
       font-size: 0.8rem;
       display: flex;
@@ -145,16 +157,14 @@
     /* Abstract / BibTeX toggles */
     .abstract-toggle, .bibtex-toggle {
       font-size: 0.8rem;
-      color: var(--muted);
+      color: var(--link);
       cursor: pointer;
       background: none;
       border: none;
       padding: 0;
-      text-decoration: underline;
       text-underline-offset: 2px;
-      text-decoration-color: var(--border);
     }
-    .abstract-toggle:hover, .bibtex-toggle:hover { color: var(--text); text-decoration-color: var(--text); }
+    .abstract-toggle:hover, .bibtex-toggle:hover { text-decoration: underline; }
     .abstract-body {
       display: none;
       margin-top: 0.75rem;
@@ -181,17 +191,15 @@
     }
     .bibtex-copy {
       font-size: 0.75rem;
-      color: var(--muted);
       cursor: pointer;
       background: none;
       border: none;
       padding: 0;
       margin-top: 0.45rem;
-      text-decoration: underline;
+      color: var(--link);
       text-underline-offset: 2px;
-      text-decoration-color: var(--border);
     }
-    .bibtex-copy:hover { color: var(--text); text-decoration-color: var(--text); }
+    .bibtex-copy:hover { text-decoration: underline; }
 
     /* Footer */
     footer {
@@ -205,11 +213,18 @@
     @media (max-width: 560px) {
       html { font-size: 16px; }
       .hero { grid-template-columns: 1fr; }
+      .banner { padding: 12px 1.25rem; }
+      .banner img { height: 32px; }
+      .site { padding: 2.5rem 1.25rem 0; }
       .hero img { width: 195px; height: 242px; }
     }
   </style>
 </head>
 <body>
+<div class="page">
+<header class="banner">
+  <img src="images/nyu-stern-banner.png" alt="NYU Leonard N. Stern School of Business" width="289" height="40" />
+</header>
 <div class="site">
 
   <div class="hero">
@@ -368,6 +383,7 @@
 
   <footer>&copy; 2026 John F. Bonney</footer>
 
+</div>
 </div>
 
 <script>
