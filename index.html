@@ -4,6 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>John F. Bonney</title>
+  <meta name="description" content="John F. Bonney, Assistant Professor of Finance at NYU Stern School of Business. Research on entrepreneurship, new firms, and labor markets, and on instrumental variable methods." />
+  <link rel="canonical" href="https://www.johnbonney.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.johnbonney.com/" />
+  <meta property="og:title" content="John F. Bonney" />
+  <meta property="og:description" content="Assistant Professor of Finance, NYU Stern School of Business. Research on entrepreneurship, new firms, and labor markets." />
+  <meta property="og:image" content="https://www.johnbonney.com/images/social-card.jpg" />
+  <meta property="og:image:width" content="600" />
+  <meta property="og:image:height" content="600" />
+  <meta property="og:image:alt" content="John F. Bonney" />
+  <meta name="twitter:card" content="summary" />
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico?v=2" />
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg?v=2" />
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=2" />
@@ -11,9 +22,6 @@
   <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512x512.png?v=2" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png?v=2" />
   <link rel="manifest" href="/images/manifest.json?v=2" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" />
 
   <style>
     :root {
@@ -23,9 +31,7 @@
       --link: #57068c;
       --border: #d9d9d9;
       --code-bg: #f5f5f5;
-      --footer: #888888;
       --violet: #57068c;
-      --max: 840px;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -33,16 +39,15 @@
     button { font-family: inherit; }
 
     body {
-      font-family: 'Source Serif 4', Georgia, serif;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.7;
-      background: var(--bg);
+      line-height: 1.5;
     }
 
     /* Page column; the banner spans its width */
     .page {
-      max-width: calc(var(--max) + 6rem);
+      max-width: 1060px;
       min-height: 100vh;
       margin: 0 auto;
       background: var(--bg);
@@ -52,110 +57,108 @@
     .banner { background: var(--violet); padding: 16px 3rem; }
     .banner img { display: block; height: 40px; width: auto; }
 
-    .site { padding: 3.5rem 3rem 0; }
-
-    /* Hero */
-    .hero {
+    /* Two columns: photo, name and links on the left; bio and papers on the right */
+    .site {
       display: grid;
-      grid-template-columns: 285px 1fr;
-      gap: 2.4rem;
+      grid-template-columns: 230px minmax(0, 1fr);
+      column-gap: 3.5rem;
       align-items: start;
-      margin-bottom: 4rem;
+      padding: 3rem 3rem 4rem;
     }
-    .hero img {
-      width: 285px;
-      height: 353px;
+
+    /* Left column */
+    .side img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 5;
       object-fit: cover;
       object-position: top center;
-      display: block;
       border: 1px solid #000;
+      margin-bottom: 1.1rem;
     }
-    .hero-text h1 {
-      font-size: 2rem;
+    .side h1 {
+      font-size: 1.35rem;
       font-weight: 500;
       letter-spacing: -0.01em;
       line-height: 1.2;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.2rem;
     }
-    .hero-text .position {
-      font-size: 0.84rem;
-      font-weight: 400;
+    .side .position {
+      font-size: 0.95rem;
+      line-height: 1.45;
       color: var(--muted);
-      letter-spacing: 0.01em;
-      margin-bottom: 1.4rem;
-      line-height: 1.6;
+      margin-bottom: 1rem;
     }
-    .hero-text .bio {
-      font-size: 1rem;
-      color: var(--text);
-      margin-bottom: 1.3rem;
-      line-height: 1.75;
-    }
-    .hero-text .links {
-      font-size: 0.83rem;
+    .side .links {
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.3rem 1.2rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+      font-size: 0.95rem;
     }
-    .hero-text .links a {
+    .side .links a {
       color: var(--link);
       text-decoration: none;
       border-bottom: 1px solid transparent;
     }
-    .hero-text .links a:hover { border-color: var(--link); }
+    .side .links a:hover { border-color: var(--link); }
+
+    /* Right column */
+    .main { min-width: 0; }
+    .intro { margin-bottom: 2.25rem; }
+    .bio { font-size: 1rem; line-height: 1.6; margin-bottom: 1rem; }
+    .bio:last-child { margin-bottom: 0; }
 
     /* Sections */
-    section { margin-bottom: 5rem; }
+    section { margin-bottom: 2.25rem; }
+    section:last-of-type { margin-bottom: 0; }
     section h2 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 1.8rem;
-      padding-bottom: 0.45rem;
-      border-bottom: 1px solid var(--text);
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.9rem;
     }
 
     /* Papers */
-    .paper { margin-bottom: 2.2rem; margin-left: 1.75rem; }
-    .paper + .paper { padding-top: 2.2rem; border-top: 1px solid var(--border); }
+    .paper { margin-bottom: 1.35rem; }
     .paper-title {
-      font-size: 1.05rem;
-      font-weight: 600;
+      font-size: 1rem;
+      font-weight: 700;
       line-height: 1.4;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.1rem;
       color: var(--text);
     }
-    .paper-title a {
-      color: var(--text);
-      text-decoration: none;
-      border-bottom: 1px solid var(--border);
-    }
-    .paper-title a:hover { border-color: var(--text); }
+    .paper-title a { color: var(--text); text-decoration: none; }
+    .paper-title a:hover { text-decoration: underline; }
     .paper-meta {
-      font-size: 0.83rem;
+      font-size: 0.95rem;
       color: var(--muted);
-      margin-bottom: 0.55rem;
-      line-height: 1.5;
+      margin-bottom: 0.1rem;
+      line-height: 1.45;
     }
     .paper-meta .status { font-style: italic; color: var(--text); }
     .paper-meta a { color: var(--text); text-decoration: none; }
     .paper-meta a:hover { color: var(--link); text-decoration: underline; }
+
+    /* Link row: PDF | Published version | Abstract | BibTeX */
     .paper-links {
-      font-size: 0.8rem;
+      font-size: 0.95rem;
       display: flex;
-      gap: 1rem;
       flex-wrap: wrap;
-      margin-bottom: 0.5rem;
+      align-items: baseline;
     }
-    .paper-links a {
-      color: var(--link);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
+    .paper-links > * + *::before {
+      content: "|";
+      display: inline-block;
+      margin: 0 0.45em;
+      color: #aaaaaa;
     }
-    .paper-links a:hover { border-color: var(--link); }
+    .paper-links a { color: var(--link); text-decoration: none; }
+    .paper-links a:hover { text-decoration: underline; }
 
     /* Abstract / BibTeX toggles */
     .abstract-toggle, .bibtex-toggle {
-      font-size: 0.8rem;
+      font-size: 0.95rem;
       color: var(--link);
       cursor: pointer;
       background: none;
@@ -166,15 +169,15 @@
     .abstract-toggle:hover, .bibtex-toggle:hover { text-decoration: underline; }
     .abstract-body {
       display: none;
-      margin-top: 0.75rem;
-      font-size: 0.94rem;
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
       color: var(--muted);
-      line-height: 1.75;
+      line-height: 1.6;
     }
     .abstract-body.open { display: block; }
 
     /* BibTeX */
-    .bibtex-body { display: none; margin-top: 0.75rem; }
+    .bibtex-body { display: none; margin-top: 0.5rem; }
     .bibtex-body.open { display: block; }
     .bibtex-body pre {
       margin: 0;
@@ -200,23 +203,18 @@
     }
     .bibtex-copy:hover { text-decoration: underline; }
 
-    /* Footer */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 1.8rem 0 3rem;
-      font-size: 0.78rem;
-      color: var(--footer);
+    /* Tablets and phones: one column */
+    @media (max-width: 760px) {
+      .site { grid-template-columns: minmax(0, 1fr); }
+      .side { margin-bottom: 2rem; }
+      .side img { width: 195px; height: 242px; aspect-ratio: auto; margin-bottom: 1.5rem; }
+      .paper-links { gap: 0.15rem 1rem; }
+      .paper-links > * + *::before { content: none; }
     }
-
-    /* Responsive */
     @media (max-width: 560px) {
-      html { font-size: 16px; }
-      .hero { grid-template-columns: 1fr; }
       .banner { padding: 12px 1.25rem; }
       .banner img { height: 32px; }
-      .site { padding: 2.5rem 1.25rem 0; }
-      .hero img { width: 195px; height: 242px; }
-      .paper { margin-left: 1rem; }
+      .site { padding: 2.5rem 1.25rem 3rem; }
     }
   </style>
 </head>
@@ -227,26 +225,29 @@
 </header>
 <div class="site">
 
-  <div class="hero">
+  <aside class="side">
     <img src="images/profile.jpg" alt="John Bonney" />
-    <div class="hero-text">
-      <h1>John F. Bonney</h1>
-      <p class="position">
-        Assistant Professor, Finance<br>
-        NYU Stern School of Business
-      </p>
-      <p class="bio">
-        I am an economist studying entrepreneurship, new firms, and labor markets. My research examines how entrepreneurs' access to human and financial capital shapes firm entry and performance. I also develop econometric methods for causal inference, with a focus on the interpretation and use of instrumental variable estimators.
-      </p>
-      <p class="bio">
-        My work has been supported by the National Science Foundation and the Stanford Institute for Economic Policy Research. I earned my Ph.D. in Economics from Stanford University in 2026.
-      </p>
-      <div class="links">
-        <a href="mailto:john.bonney@stern.nyu.edu">john.bonney@stern.nyu.edu</a>
-        <a href="/files/Bonney_CV.pdf">C.V.</a>
-        <a href="https://scholar.google.com/citations?user=D6iYU6cAAAAJ">Google Scholar</a>
-      </div>
+    <h1>John F. Bonney</h1>
+    <p class="position">
+      Assistant Professor, Finance<br>
+      NYU Stern School of Business
+    </p>
+    <div class="links">
+      <a href="mailto:john.bonney@stern.nyu.edu">john.bonney@stern.nyu.edu</a>
+      <a href="/files/Bonney_CV.pdf">C.V.</a>
+      <a href="https://scholar.google.com/citations?user=D6iYU6cAAAAJ">Google Scholar</a>
     </div>
+  </aside>
+
+  <main class="main">
+
+  <div class="intro">
+    <p class="bio">
+      I am an economist studying entrepreneurship, new firms, and labor markets. My research examines how entrepreneurs' access to human and financial capital shapes firm entry and performance. I also develop econometric methods for causal inference, with a focus on the interpretation and use of instrumental variable estimators.
+    </p>
+    <p class="bio">
+      My work has been supported by the National Science Foundation and the Stanford Institute for Economic Policy Research. I earned my Ph.D. in Economics from Stanford University in 2026.
+    </p>
   </div>
 
   <section id="publications">
@@ -255,7 +256,7 @@
 
     <div class="paper">
       <div class="paper-title">
-        When is TSLS <em>Actually</em> LATE?
+        <a href="/files/tslslate.pdf">When is TSLS <em>Actually</em> LATE?</a>
       </div>
       <div class="paper-meta">
         With <a href="https://sites.google.com/view/cblandhol">Christine Blandhol</a>, <a href="https://sites.google.com/site/magnemogstad/">Magne Mogstad</a>, and <a href="https://a-torgovitsky.github.io">Alexander Torgovitsky</a>
@@ -287,7 +288,7 @@
 
     <div class="paper">
       <div class="paper-title">
-        Childbirth and Firm Performance: Evidence from Norwegian Entrepreneurs
+        <a href="/files/childbirth-firms.pdf">Childbirth and Firm Performance: Evidence from Norwegian Entrepreneurs</a>
       </div>
       <div class="paper-meta">
         With <a href="https://sites.google.com/view/pistaferri/home">Luigi Pistaferri</a> and <a href="https://avoena.people.stanford.edu">Alessandra Voena</a>
@@ -324,7 +325,7 @@
 
     <div class="paper">
       <div class="paper-title">
-        How Network Hiring by Entrepreneurs Shapes Firm Formation and Performance
+        <a href="/files/johnbonney_JMP.pdf">How Network Hiring by Entrepreneurs Shapes Firm Formation and Performance</a>
       </div>
       <div class="paper-links">
         <a href="/files/johnbonney_JMP.pdf">PDF</a>
@@ -388,7 +389,7 @@
 
   </section>
 
-  <footer>&copy; 2026 John F. Bonney</footer>
+  </main>
 
 </div>
 </div>
