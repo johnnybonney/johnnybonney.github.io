@@ -4,6 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>John F. Bonney</title>
+  <meta name="description" content="John F. Bonney, Assistant Professor of Finance at NYU Stern School of Business. Research on entrepreneurship, new firms, and labor markets, and on instrumental variable methods." />
+  <link rel="canonical" href="https://www.johnbonney.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.johnbonney.com/" />
+  <meta property="og:title" content="John F. Bonney" />
+  <meta property="og:description" content="Assistant Professor of Finance, NYU Stern School of Business. Research on entrepreneurship, new firms, and labor markets." />
+  <meta property="og:image" content="https://www.johnbonney.com/images/social-card.jpg" />
+  <meta property="og:image:width" content="600" />
+  <meta property="og:image:height" content="600" />
+  <meta property="og:image:alt" content="John F. Bonney" />
+  <meta name="twitter:card" content="summary" />
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico?v=2" />
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg?v=2" />
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=2" />
@@ -20,7 +31,6 @@
       --link: #57068c;
       --border: #d9d9d9;
       --code-bg: #f5f5f5;
-      --footer: #888888;
       --violet: #57068c;
     }
 
@@ -53,7 +63,7 @@
       grid-template-columns: 230px minmax(0, 1fr);
       column-gap: 3.5rem;
       align-items: start;
-      padding: 3rem 3rem 0;
+      padding: 3rem 3rem 4rem;
     }
 
     /* Left column */
@@ -102,6 +112,7 @@
 
     /* Sections */
     section { margin-bottom: 2.25rem; }
+    section:last-of-type { margin-bottom: 0; }
     section h2 {
       font-size: 1.25rem;
       font-weight: 700;
@@ -117,6 +128,8 @@
       margin-bottom: 0.1rem;
       color: var(--text);
     }
+    .paper-title a { color: var(--text); text-decoration: none; }
+    .paper-title a:hover { text-decoration: underline; }
     .paper-meta {
       font-size: 0.95rem;
       color: var(--muted);
@@ -190,13 +203,6 @@
     }
     .bibtex-copy:hover { text-decoration: underline; }
 
-    /* Footer */
-    footer {
-      padding: 0.5rem 0 3rem;
-      font-size: 0.78rem;
-      color: var(--footer);
-    }
-
     /* Tablets and phones: one column */
     @media (max-width: 760px) {
       .site { grid-template-columns: minmax(0, 1fr); }
@@ -208,7 +214,7 @@
     @media (max-width: 560px) {
       .banner { padding: 12px 1.25rem; }
       .banner img { height: 32px; }
-      .site { padding: 2.5rem 1.25rem 0; }
+      .site { padding: 2.5rem 1.25rem 3rem; }
     }
   </style>
 </head>
@@ -250,7 +256,7 @@
 
     <div class="paper">
       <div class="paper-title">
-        When is TSLS <em>Actually</em> LATE?
+        <a href="/files/tslslate.pdf">When is TSLS <em>Actually</em> LATE?</a>
       </div>
       <div class="paper-meta">
         With <a href="https://sites.google.com/view/cblandhol">Christine Blandhol</a>, <a href="https://sites.google.com/site/magnemogstad/">Magne Mogstad</a>, and <a href="https://a-torgovitsky.github.io">Alexander Torgovitsky</a>
@@ -282,7 +288,7 @@
 
     <div class="paper">
       <div class="paper-title">
-        Childbirth and Firm Performance: Evidence from Norwegian Entrepreneurs
+        <a href="/files/childbirth-firms.pdf">Childbirth and Firm Performance: Evidence from Norwegian Entrepreneurs</a>
       </div>
       <div class="paper-meta">
         With <a href="https://sites.google.com/view/pistaferri/home">Luigi Pistaferri</a> and <a href="https://avoena.people.stanford.edu">Alessandra Voena</a>
@@ -319,7 +325,7 @@
 
     <div class="paper">
       <div class="paper-title">
-        How Network Hiring by Entrepreneurs Shapes Firm Formation and Performance
+        <a href="/files/johnbonney_JMP.pdf">How Network Hiring by Entrepreneurs Shapes Firm Formation and Performance</a>
       </div>
       <div class="paper-links">
         <a href="/files/johnbonney_JMP.pdf">PDF</a>
@@ -382,8 +388,6 @@
     </div>
 
   </section>
-
-  <footer>&copy; 2026 John F. Bonney</footer>
 
   </main>
 
